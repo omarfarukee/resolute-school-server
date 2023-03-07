@@ -27,7 +27,7 @@ async function run() {
             const result = await studentCollection.insertOne(item)
             res.send(result)
         })
-// hellooo
+// hello
         app.get('/students', async (req, res) => {
             const query = {}
             const result = await studentCollection.find(query).toArray()
